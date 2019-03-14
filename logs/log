@@ -1,0 +1,440 @@
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [13/Mar/2019 19:31:53] "POST /admin/user?action=register HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [13/Mar/2019 19:32:04] "POST /admin/user/?action=register HTTP/1.1" 404 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 19:32:48] "POST /admin/user/?action=register HTTP/1.1" 404 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/FlaskTpp/__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 19:57:26] "POST /admin/user/?action=register HTTP/1.1" 404 -
+ERROR models.py:15 (pymysql.err.ProgrammingError) (1146, "Table 'Tpp.admin_user' doesn't exist")
+[SQL: INSERT INTO admin_user (u_name, _u_password) VALUES (%(u_name)s, %(_u_password)s)]
+[parameters: {'u_name': '12', '_u_password': 'pbkdf2:sha256:50000$C6pKU96Y$56e75350595e87e37d18a2860584e501376ba5627845cac86b4bddc127fb8be3'}]
+(Background on this error at: http://sqlalche.me/e/f405)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 19:57:40] "POST /admin/users/?action=register HTTP/1.1" 200 -
+ERROR __init__.py:97 Error: Directory migrations already exists
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 19:59:19] "POST /admin/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:00:18] "POST /admin/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:06:46] "POST /admin/users/?action=register HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:08:13] "POST /admin/users/?action=register HTTP/1.1" 400 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:08:48] "POST /admin/users/?action=register HTTP/1.1" 400 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:09:33] "POST /admin/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '' for key 'u_name'")
+[SQL: INSERT INTO admin_user (u_name, _u_password) VALUES (%(u_name)s, %(_u_password)s)]
+[parameters: {'u_name': '', '_u_password': 'pbkdf2:sha256:50000$oF3j4vPn$328419e6315516fa01d39774e2a87cfb69bd89d1bda294af3b437a85b54da393'}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:09:57] "POST /admin/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '' for key 'u_name'")
+[SQL: INSERT INTO admin_user (u_name, _u_password) VALUES (%(u_name)s, %(_u_password)s)]
+[parameters: {'u_name': '', '_u_password': 'pbkdf2:sha256:50000$NpQqnyFI$50d99dc1d7eae99fa65181d9b4f5f5ef60c9c92d29ab0745fd1411002d1fc797'}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:10:18] "POST /admin/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:12:31] "POST /admin/users/?action=register HTTP/1.1" 400 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:42:10] "POST /admin/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:42:16] "POST /admin/users/?action=login HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:43:50] "POST /admin/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 20:43:57] "POST /admin/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/models/user_model.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/models/user_model.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:39:10] "POST /admin/users/ HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:39:34] "POST /admin/movies/ HTTP/1.1" 404 -
+ERROR decorators.py:15 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:39:46] "POST /admin/movie/ HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:40:46] "POST /admin/users/?u_name=12&u_password=12 HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:41:16] "POST /admin/users/?action=login HTTP/1.1" 200 -
+ERROR models.py:15 (pymysql.err.ProgrammingError) (1146, "Table 'Tpp.movie' doesn't exist")
+[SQL: INSERT INTO movie (m_name, m_duration, m_type) VALUES (%(m_name)s, %(m_duration)s, %(m_type)s)]
+[parameters: {'m_name': None, 'm_duration': 90, 'm_type': None}]
+(Background on this error at: http://sqlalche.me/e/f405)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:41:32] "POST /admin/movie/?token=adminf3d41ba9511f434a9506883c0703fea5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR decorators.py:15 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:42:31] "POST /admin/movie/?token=adminf3d41ba9511f434a9506883c0703fea5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/decorators.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR decorators.py:15 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:43:21] "POST /admin/movie/?token=adminf3d41ba9511f434a9506883c0703fea5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/decorators.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR decorators.py:16 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:43:42] "POST /admin/movie/?token=adminf3d41ba9511f434a9506883c0703fea5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:46:06] "POST /admin/users/?action=login HTTP/1.1" 200 -
+ERROR decorators.py:16 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:46:51] "POST /admin/movie/?token=adminf3d41ba9511f434a9506883c0703fea5 HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:47:06] "POST /admin/movie/?token=admin1721561544864528ae55cabb0c8c9251 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR decorators.py:16 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:51:55] "POST /admin/movie/?token=admin1721561544864528ae55cabb0c8c9251 HTTP/1.1" 200 -
+ERROR decorators.py:16 object of type 'NoneType' has no len()
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:52:02] "POST /admin/movie/?token=admin1721561544864528ae55cabb0c8c9251 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/FlaskTpp/ext.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:52:47] "POST /admin/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:53:03] "POST /admin/movie/?token=adminc732ed4fb5ab480788f36a135e49ce94 HTTP/1.1" 200 -
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '12' for key 'm_name'")
+[SQL: INSERT INTO movie (m_name, m_duration, m_type) VALUES (%(m_name)s, %(m_duration)s, %(m_type)s)]
+[parameters: {'m_name': '12', 'm_duration': '12', 'm_type': '12'}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:53:08] "POST /admin/movie/?token=adminc732ed4fb5ab480788f36a135e49ce94 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:58:54] "GET /admin/movie/ HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 21:59:40] "GET /admin/movie/ HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:00:11] "GET /admin/movie/ HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:00:42] "GET /admin/movie/ HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:01:03] "GET /admin/movie/ HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR movie_views.py:30 invalid literal for int() with base 10: 'DDA'
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:01:35] "GET /admin/movie/ HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/FlaskTpp/apis.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:41:27] "POST /cinema/users/?action=login HTTP/1.1" 400 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:41:39] "POST /cinema/users/?action=login HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:42:12] "POST /cinema/users/?action=login HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:42:35] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:42:45] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:42:47] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:43:55] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:44:33] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:45:31] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '123' for key 'cu_name'")
+[SQL: INSERT INTO cinema_user (cu_name, _cu_password, cu_permissions) VALUES (%(cu_name)s, %(_cu_password)s, %(cu_permissions)s)]
+[parameters: {'cu_name': '123', '_cu_password': 'pbkdf2:sha256:50000$ts6tLbGz$c2d119a708cb9e1d679211a183c429d1c0b9aa6d9480616c9819369083fe9ed8', 'cu_permissions': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:45:54] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:47:45] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:49:28] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:49:40] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:50:16] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:51:19] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:53:36] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '12' for key 'm_name'")
+[SQL: INSERT INTO movie (m_name, m_duration, m_type) VALUES (%(m_name)s, %(m_duration)s, %(m_type)s)]
+[parameters: {'m_name': '12', 'm_duration': '12', 'm_type': '12'}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:54:02] "POST /admin/movie/?token=adminc732ed4fb5ab480788f36a135e49ce94 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:54:40] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:58:43] "POST /cinema/users/?action=login HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 22:59:41] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+ERROR models.py:15 (pymysql.err.IntegrityError) (1062, "Duplicate entry '1234' for key 'cu_name'")
+[SQL: INSERT INTO cinema_user (cu_name, _cu_password, cu_permissions) VALUES (%(cu_name)s, %(_cu_password)s, %(cu_permissions)s)]
+[parameters: {'cu_name': '1234', '_cu_password': 'pbkdf2:sha256:50000$Hmtk28ow$aa294323cd1c7fc4d7262125f18fd3d287ad1e80343a909e22fbea644a43b033', 'cu_permissions': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:00:04] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:01:22] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:02:02] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:03:01] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:03:46] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/user_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Admin/views/movie_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:37:49] "POST /cinema/cinema/?token=cinemac019d119aeef439eb5160cfe204cb3d1 HTTP/1.1" 404 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:37:56] "POST /cinema/cinemas/?token=cinemac019d119aeef439eb5160cfe204cb3d1 HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:38:37] "POST /cinema/users/?action=login HTTP/1.1" 400 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:39:00] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:39:16] "POST /cinema/cinemas/?token=cinemad23c2954795a4097a715390451e0172f HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/decorators.py', reloading
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:39:50] "POST /cinema/cinemas/?token=cinemad23c2954795a4097a715390451e0172f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/cinema_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:40:18] "POST /cinema/cinemas/?token=cinemad23c2954795a4097a715390451e0172f HTTP/1.1" 200 -
+INFO _internal.py:88 10.11.67.112 - - [13/Mar/2019 23:40:58] "POST /cinema/cinemas/?token=cinemad23c2954795a4097a715390451e0172f HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/api.py', reloading
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:10:25] "POST /cinema/users?register HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:10:59] "POST /cinema/users/?register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:12:23] "POST /cinema/users/?action=register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:13:09] "POST /cinema/users/?action=login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:13:46] "POST /cinema/users/?action=login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:15:31] "POST /cinema/cinemas/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/decorators.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/hall_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+ERROR models.py:15 (pymysql.err.ProgrammingError) (1146, "Table 'Tpp.hall' doesn't exist") [SQL: 'INSERT INTO hall (h_num, h_mode, h_seats, h_cinema) VALUES (%(h_num)s, %(h_mode)s, %(h_seats)s, %(h_cinema)s)'] [parameters: {'h_num': '1', 'h_mode': '3d', 'h_seats': None, 'h_cinema': '3'}] (Background on this error at: http://sqlalche.me/e/f405)
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:18:53] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:19:52] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:19:59] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/hall_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:24:27] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/hall_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:25:07] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:25:14] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/hall_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:28:09] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 19:37:07] "POST /cinema/halls/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/Cinema/views/hall_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
