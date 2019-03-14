@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a11c458f-02e4-4aa0-b240-37443115cd39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/59838b7d-e3e4-4939-8404-dbfbd7d7b869.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cinema/models/schedule_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/aa94e4498d5a_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FlaskTpp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlaskTpp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema/models/order_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema/models/order_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema/models/user_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema/models/user_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema/views/order_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema/views/order_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema/views/schedule_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema/views/schedule_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,6 +45,13 @@
         <item name="Tpp: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="alembic_version: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Tpp@106.14.2.56" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Tpp: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="schedule: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -89,14 +85,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="3" />
-          <entry key="py" value="2856" />
+          <entry key="py" value="3462" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="2856" />
+          <entry key="Python" value="3462" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
@@ -106,14 +102,16 @@
           <entry key="cinema" value="1" />
           <entry key="cinema_user" value="2" />
           <entry key="hall" value="1" />
+          <entry key="movie" value="1" />
           <entry key="movie_order" value="2" />
           <entry key="py" value="25" />
+          <entry key="schedule" value="1" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="7" />
+          <entry key="Database Element" value="9" />
           <entry key="Python" value="25" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -137,20 +135,29 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Cinema/views/schedule_views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
-                  <caret line="30" column="45" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="51" />
+                <state relative-caret-position="290">
+                  <caret line="139" column="41" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
-                    <marker date="1552574863108" expanded="true" signature="536:537" ph="..." />
+                    <marker date="1552576718635" expanded="true" signature="776:777" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="das://59838b7d-e3e4-4939-8404-dbfbd7d7b869/schema/Tpp/table/movie">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="das://59838b7d-e3e4-4939-8404-dbfbd7d7b869/schema/Tpp/table/movie_order">
               <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
                 <state>
@@ -208,18 +215,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Admin/models/movie_model.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#0#27#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Cinema/views/cinema_views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -268,8 +263,8 @@
         <option value="$PROJECT_DIR$/Cinema/models/order_model.py" />
         <option value="$PROJECT_DIR$/Cinema/views/order_views.py" />
         <option value="$PROJECT_DIR$/Cinema/models/user_model.py" />
-        <option value="$PROJECT_DIR$/Cinema/views/schedule_views.py" />
         <option value="$PROJECT_DIR$/Cinema/api.py" />
+        <option value="$PROJECT_DIR$/Cinema/views/schedule_views.py" />
       </list>
     </option>
   </component>
@@ -409,7 +404,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30967742" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30967742" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -598,14 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cinema/views/schedule_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1552574863108" expanded="true" signature="536:537" ph="..." />
-          </folding>
+    <entry file="das://59838b7d-e3e4-4939-8404-dbfbd7d7b869/schema/Tpp/table/schedule">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -613,6 +604,24 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://59838b7d-e3e4-4939-8404-dbfbd7d7b869/schema/Tpp/table/movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cinema/views/schedule_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="139" column="41" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1552576718635" expanded="true" signature="776:777" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

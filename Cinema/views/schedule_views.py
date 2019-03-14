@@ -2,7 +2,7 @@ import datetime
 from operator import or_, and_
 
 from flask import g, request
-from flask_restful import Resource
+from flask_restful import Resource, fields, marshal
 
 from Admin.models.movie_model import Movie
 from Cinema.models.cinema_model import Cinema
@@ -14,6 +14,14 @@ from decorators import permission_required
 
 # 清扫时间 单位：分
 CLEANING_TIME = 15
+schedule_fields = {
+    "id": fields.Integer,
+    "hall_id": fields.Integer,
+    "movie_id": fields.Integer,
+    "movie_start_time": fields.DateTime,
+    "movie_end_time": fields.DateTime,
+    "movie_price": fields.Float
+}
 
 
 class ScheduleResource(Resource):
@@ -65,14 +73,9 @@ class ScheduleResource(Resource):
 
         movie_start_time_tran = datetime.datetime(year=int(year), month=int(month), day=int(day), hour=int(hour),
                                                   minute=int(minute), second=int(second))
-        print(type(movie_start_time_tran))
         movie_end_time = movie_start_time_tran + datetime.timedelta(minutes=movie_duration) + datetime.timedelta(
             minutes=CLEANING_TIME)
-        print(datetime.timedelta(minutes=movie_duration))
         schedule.movie_end_time = movie_end_time
-        print(movie_end_time)
-        print(movie_start_time)
-
         # 校验该时间段是否可以排档
         # schedule_left = Schedule.query.filter(Schedule.movie_start_time.__le__(movie_end_time).filter(
         #     Schedule.movie_end_time.__ge__(movie_end_time))
@@ -113,7 +116,6 @@ class ScheduleResource(Resource):
                 )
             )
         )
-        print(schedules)
         if schedules.first():
             data = {
                 "msg": "Time conflict",
@@ -129,6 +131,26 @@ class ScheduleResource(Resource):
 
         data = {
             "msg": "create success",
-            "status": 200
+            "status": 200,
+            "data": marshal(schedule, schedule_fields)
+        }
+        return data
+
+    def get(self):
+        cinema_id = request.args.get("cinema_id")
+        movie_id = request.args.get("movie_id")
+        data_time = request.args.get("data_time")
+
+        halls = Hall.query.filter(Hall.h_cinema.__eq__(cinema_id))
+        hall_id = [hall.id for hall in halls]
+
+        scheduless = Schedule.query.filter(Schedule.movie_id.__eq__(movie_id)) \
+            .filter(Schedule.hall_id.in_(hall_id)) \
+            .filter(Schedule.movie_start_time.__ge__(data_time + " 00:00:00")) \
+            .filter(Schedule.movie_start_time.__le__(data_time + " 23:59:59")).all()
+        data = {
+            "msg": "ok",
+            "status": 200,
+            "data": marshal(scheduless, schedule_fields)
         }
         return data
