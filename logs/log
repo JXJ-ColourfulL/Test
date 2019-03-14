@@ -438,3 +438,50 @@ INFO _internal.py:88  * Detected change in '/home/fxm/PycharmProjects/FlaskTpp/C
 INFO _internal.py:88  * Restarting with stat
 WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 20:31:55] "POST /cinema/orders/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 20:32:22] "POST /cinema/orders/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88  * Detected change in '/home/fxm/Project/FlaskTest/FlaskTpp/Cinema/api.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:51:36] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:52:16] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/Project/FlaskTest/FlaskTpp/Cinema/views/schedule_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:53:58] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/Project/FlaskTest/FlaskTpp/Cinema/views/schedule_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:54:42] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/fxm/Project/FlaskTest/FlaskTpp/Cinema/views/schedule_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 301-182-444
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:00] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:05] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:12] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:16] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:20] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:29] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [14/Mar/2019 22:56:33] "POST /cinema/schedules/?token=cinema8c0cb9cfc51646af87b244cf3fb8f98f HTTP/1.1" 200 -

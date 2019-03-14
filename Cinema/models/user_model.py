@@ -5,13 +5,15 @@ from common.models import PrimaryKeyBaseModel
 
 PERMISSION_READ = 1
 PERMISSION_WRITE = 2
-PERMISSION_EXCT = 4
+PERMISSION_DELETE = 4
+PERMISSION_PLACE = 8
 
 
 class CinemaUser(PrimaryKeyBaseModel):
     cu_name = db.Column(db.String(64), unique=True)
     _cu_password = db.Column(db.String(128))
     cu_permissions = db.Column(db.Integer, default=PERMISSION_READ)
+    c_cinema = db.relationship("Cinema", backref="CinemaUser", lazy=True)
 
     @property
     def cu_password(self):
